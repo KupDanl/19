@@ -59,14 +59,14 @@ app.post( "/post", function(req, res){//для постинга на стран�
 	let transporter = nodemailer.createTransport({//опции для использования почтовика как площадки для отправки
 		service: 'outlook',
 		auth: {
-			user: 'rorykory@outlook.com', 
-			pass: 'Kryptonite' 
+			user: 'exmple@outlook.com', 
+			pass: '' 
 		}
 	});
 
 	let mailOptions = {//для отправки данных с страницы post
-		from: 'rorykory@outlook.com', //введите здесь свой email
-		to: 'mrgandhubas@gmail.com',  
+		from: 'exmple@outlook.com', //введите здесь свой email
+		to: 'exmple@gmail.com',  
 		subject: title,
 		text: content
 	}
