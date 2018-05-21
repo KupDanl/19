@@ -1,0 +1,176 @@
+p {
+    font: 15pt sans-serif;  
+    margin: 10px;
+   } 
+   
+h1 {
+    font: 200% serif;
+    margin: 10px;
+   }
+   
+TABLE.main {
+    width: 80%;
+	height: 1200px;
+    border-collapse: collapse; 
+	background: white;
+   }
+   
+TR, TD.think {
+	width: 200;
+	height: 100;
+   }
+   
+.scroll {
+   height: 1200px; 
+   width: 200px; 
+   background: #fff; 
+   border: 1px solid #C1C1C1; 
+   overflow-y: scroll; 
+   }
+   
+ IMG.side {
+	overflow:hidden;
+	width: 180; 
+	height: 160;
+   }
+   
+BODY {
+	border-top: 5px solid #7e7e7e;
+	background-size: 100%;
+   }
+textarea {
+	background-color: #f3f3f3;
+	height: 300px;
+	width: 300px;
+	color: #b2b2b2;
+	padding: 0 10px;
+	vertical-align: top;
+   }
+   
+input[type="text"] {
+	background-color: #f3f3f3;
+	height: 30px;
+	width: 300px;
+	color: #b2b2b2;
+	padding: 0 10px;
+	vertical-align: top;
+   }
+   
+input[type="search"] {
+	background-color: #f3f3f3;
+	height: 30px;
+	width: 300px;
+	color: #b2b2b2;
+	padding: 0 10px;
+	vertical-align: top;
+   }
+
+input[type="submit"] {
+	background-color: #D3D3D3;
+	border: none;
+	height: 30px;
+	width: 80px;
+	color: #808080;
+	padding: 0 10px;
+	vertical-align: top;
+   }
+   
+input[type="submit"]:hover {
+	   background:#808080;
+	   color:white;
+   }
+   
+input[type="button"] {
+	color: #808080;
+	background-color: #D3D3D3;
+	margin:20px;
+	border: none;
+	height: 50px;
+	width: 200px;
+	font-family: 'Oswald', sans-serif;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+   }
+   
+button {
+	color: #808080;
+	background-color: #D3D3D3;
+	margin:20px;
+	border: none;
+	height: 50px;
+	width: 200px;
+	font-family: 'Oswald', sans-serif;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+   }
+   
+input[type="button"]:hover {
+	   background:#808080;
+	   color:white;
+   }
+   
+#slideshow {
+    position:relative;
+    height:350px;
+   }
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+   }
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+   }
+
+#slideshow IMG.last-active {
+    z-index:9;
+   }
+   
+/* весь контейнер поддерживает перспективу */
+.flip-container {
+ perspective: 1000;
+}
+ /* переверните сторону при проведении мышью */
+ .flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+ }
+
+.flip-container, .front, .back {
+ width: 320px;
+ height: 480px;
+}
+
+/* здесь находится скорость перевертывания */
+.flipper {
+ transition: 0.6s;
+ transform-style: preserve-3d;
+
+ position: relative;
+}
+
+/* скройте обратную сторону во время переворота */
+.front, .back {
+ backface-visibility: hidden;
+
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+/* лицевая сторона размещена над обратной */
+.front {
+ z-index: 2;
+}
+
+/* обратная, изначально скрытая сторона */
+.back {
+ transform: rotateY(180deg);
+}
+
